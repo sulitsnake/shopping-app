@@ -1,12 +1,24 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import { Provider as PaperProvider, MD3DarkTheme, MD3LightTheme } from "react-native-paper";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
+  <PaperProvider>
+    <View style={[styles.container, { 
+          //backgroundColor, 
+          justifyContent: "space-between", 
+          paddingBottom: 20 }]}>
+      <View>
+
+      <Text style = {[globalstyles.HomeHeader]}>HOME PAGE</Text>
+        
+      </View>    
+
+
     </View>
+
+    </PaperProvider>
   );
 }
 
