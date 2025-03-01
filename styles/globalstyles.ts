@@ -9,11 +9,26 @@ export const globalStyles = StyleSheet.create({
         justifyContent: 'center',
       },
 
-    HomeHeader:{
+    header:{
      fontSize:25,
      fontWeight:"bold",
-     marginTop:15,
+     marginTop:50,
      alignSelf:"center"
     },
+
+    button: {
+        backgroundColor: "#007bff",
+        padding: 10,
+        borderRadius: 5,
+        marginVertical: 5,
+        width: 200,
+        alignItems: "center",
+      },
+      
+      buttonText: {
+        color: "#fff",
+        fontSize: 18,
+        fontWeight: "bold",
+      },
 
 })

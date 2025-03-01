@@ -1,23 +1,7 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import { Provider as PaperProvider, MD3DarkTheme, MD3LightTheme } from "react-native-paper";
-import { globalStyles } from './styles/globalstyles';
+import React from "react";
+import AppNavigator from "./navigation/AppNavigator";  // ✅ Import AppNavigator
 
 export default function App() {
-  return (
-  <PaperProvider>
-    <View style={[globalStyles.container, { 
-          justifyContent: "space-between", 
-          paddingBottom: 20 }]}>
-      <View>
-
-      <Text style = {[globalStyles.HomeHeader]}>HOME PAGE</Text>
-        
-      </View>    
-
-
-    </View>
-
-    </PaperProvider>
-  );
+  return <AppNavigator />;  // ✅ Make sure AppNavigator is used
 }
+
